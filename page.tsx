@@ -1,4 +1,3 @@
-
 import React from "react";
 
 type TrainStatus = "Fit" | "Unfit";
@@ -45,6 +44,7 @@ function DataUpload() {
     <div className="bg-white rounded-lg shadow p-6 mb-6">
       <h2 className="font-semibold mb-4">Data Upload</h2>
       <div className="flex flex-col items-center gap-4">
+        {/* Make sure upload-icon.svg is in public folder */}
         <img src="/upload-icon.svg" alt="Upload" className="w-16 h-16" />
         <form className="flex flex-col md:flex-row items-center gap-2">
           <input type="file" accept=".csv,.xlsx" className="border p-2 rounded text-sm" />
@@ -230,5 +230,3 @@ export default function Dashboard() {
     </div>
   );
 }
-
-
